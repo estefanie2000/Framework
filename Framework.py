@@ -9,7 +9,7 @@ BASE_URL = "https://www.saucedemo.com/"
 
 def get_driver():
     options = webdriver.ChromeOptions()
-    options.add_argument("--start-maximized")  # abre Chrome maximizado
+    options.add_argument("--start-maximized") 
 
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
